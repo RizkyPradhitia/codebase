@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1diK-IB_UqgORkJ8qWrfU34JIUDUIptK3
 """
 
-from math_function import add
+from math_function import add, multiply, divide
 
 
 def main():
@@ -18,6 +18,10 @@ def main():
 
     if operator == "+":
         result = add(data_1, data_2)
+    elif operator == "*":
+        result = multiply(data_1, data_2)
+    elif operator == "/":
+        result = divide(data_1, data_2)
 
     print("{} {} {} = {} ".format(data_1, operator, data_2, result))
 
